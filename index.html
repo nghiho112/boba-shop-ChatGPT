@@ -10,100 +10,110 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8;
     }
-    header, footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
+
+    header {
+      background-color: #ffcc00;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
-    nav {
-      display: flex;
-      justify-content: center;
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
     }
-    nav a {
-      color: #fff;
+
+    nav ul li a {
       text-decoration: none;
-      margin: 0 20px;
-      font-size: 18px;
+      color: #333;
     }
+
+    .hero {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 100px 0;
+      color: #333;
+    }
+
     .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      background-color: #f0f0f0;
       padding: 20px;
     }
-    .drink {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .menu .drink {
+      margin-bottom: 20px;
     }
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+
+    .locations {
+      background-color: #ffcc00;
       padding: 20px;
+      text-align: center;
+      color: #333;
     }
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .menu {
-        grid-template-columns: 1fr;
-      }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Boba Tea Shop</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#locations">Locations</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#locations">Locations</a></li>
+      </ul>
     </nav>
   </header>
-  
-  <div id="home">
-    <h2>Welcome to Boba Tea Shop</h2>
-    <p>Enjoy a refreshing experience with our wide range of boba drinks!</p>
+
+  <div class="hero" id="home">
+    <h1>Welcome to Boba Tea Shop</h1>
+    <p>Discover the perfect blend of flavors in every sip!</p>
   </div>
-  
-  <div id="menu" class="menu">
-    <div class="drink">
-      <h3>Classic Milk Tea</h3>
-      <p>A traditional favorite made with black tea, milk, and tapioca pearls.</p>
-      <p>Ingredients: Black tea, milk, tapioca pearls</p>
-    </div>
+
+  <section class="menu" id="menu">
+    <h2>Menu</h2>
     <div class="drink">
       <h3>Taro Milk Tea</h3>
-      <p>A creamy delight with taro flavor, milk, and chewy tapioca pearls.</p>
-      <p>Ingredients: Taro powder, milk, tapioca pearls</p>
+      <p>A classic boba tea made with taro flavor and milk, topped with tapioca pearls.</p>
+      <p>Ingredients: Taro powder, black tea, milk, tapioca pearls</p>
     </div>
     <div class="drink">
       <h3>Matcha Latte</h3>
-      <p>A Japanese classic featuring matcha green tea and steamed milk.</p>
-      <p>Ingredients: Matcha powder, milk</p>
+      <p>A refreshing blend of matcha powder, milk, and sweetened with honey.</p>
+      <p>Ingredients: Matcha powder, milk, honey</p>
     </div>
-    <!-- Add more drinks here -->
-  </div>
-  
+    <!-- Add more drink items here -->
+  </section>
+
+  <section class="locations" id="locations">
+    <h2>Locations</h2>
+    <ul>
+      <li>New York City</li>
+      <li>Los Angeles</li>
+      <!-- Add more locations here -->
+    </ul>
+    <h3>Contact Us</h3>
+    <p>Email: info@bobateashop.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
+
   <footer>
-    <div class="footer-content">
-      <div class="locations">
-        <h3>Locations</h3>
-        <ul>
-          <li>New York - 123 Main St</li>
-          <li>Los Angeles - 456 Elm St</li>
-          <li>Miami - 789 Oak St</li>
-        </ul>
-      </div>
-      <div class="contact">
-        <h3>Contact Us</h3>
-        <p>Phone: 123-456-7890</p>
-        <p>Email: info@bobateashop.com</p>
-      </div>
-    </div>
+    <p>&copy; 2024 Boba Tea Shop</p>
   </footer>
+
+  <script>
+    // Add any JavaScript here if needed
+  </script>
 </body>
 </html>
