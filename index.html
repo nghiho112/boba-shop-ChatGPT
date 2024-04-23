@@ -5,115 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boba Tea Shop</title>
   <style>
-    /* General styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f7f7f7;
     }
 
     header {
-      background-color: #ffcc00;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+      background-color: #ffbc42;
+      padding: 20px;
       text-align: center;
+      color: white;
     }
 
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
 
-    nav ul li a {
+    nav a {
+      margin: 0 20px;
+      color: white;
       text-decoration: none;
-      color: #333;
+      font-weight: bold;
     }
 
-    .hero {
-      background-color: #ffcc00;
-      text-align: center;
-      padding: 100px 0;
-      color: #333;
+    nav a:hover {
+      text-decoration: underline;
     }
 
-    .menu {
-      background-color: #f0f0f0;
+    section {
       padding: 20px;
-    }
-
-    .menu .drink {
-      margin-bottom: 20px;
-    }
-
-    .locations {
-      background-color: #ffcc00;
-      padding: 20px;
-      text-align: center;
-      color: #333;
+      margin: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     footer {
       background-color: #333;
-      color: #fff;
+      color: white;
+      padding: 20px;
       text-align: center;
-      padding: 20px 0;
+    }
+
+    .menu-item {
+      margin-bottom: 20px;
+    }
+
+    .menu-item h2 {
+      color: #ff5f40;
+    }
+
+    .menu-item p {
+      color: #333;
     }
   </style>
 </head>
 <body>
   <header>
+    <h1>Boba Tea Shop</h1>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#locations">Locations</a></li>
-      </ul>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Locations</a>
     </nav>
   </header>
 
-  <div class="hero" id="home">
-    <h1>Welcome to Boba Tea Shop</h1>
-    <p>Discover the perfect blend of flavors in every sip!</p>
-  </div>
-
-  <section class="menu" id="menu">
-    <h2>Menu</h2>
-    <div class="drink">
-      <h3>Taro Milk Tea</h3>
-      <p>A classic boba tea made with taro flavor and milk, topped with tapioca pearls.</p>
-      <p>Ingredients: Taro powder, black tea, milk, tapioca pearls</p>
+  <section id="menu">
+    <div class="menu-item">
+      <h2>Classic Milk Tea</h2>
+      <p>A traditional Taiwanese tea drink made with black tea, milk, and sweetened tapioca pearls.</p>
+      <p>Ingredients: Black tea, milk, tapioca pearls, sugar</p>
     </div>
-    <div class="drink">
-      <h3>Matcha Latte</h3>
-      <p>A refreshing blend of matcha powder, milk, and sweetened with honey.</p>
-      <p>Ingredients: Matcha powder, milk, honey</p>
-    </div>
-    <!-- Add more drink items here -->
-  </section>
 
-  <section class="locations" id="locations">
-    <h2>Locations</h2>
-    <ul>
-      <li>New York City</li>
-      <li>Los Angeles</li>
-      <!-- Add more locations here -->
-    </ul>
-    <h3>Contact Us</h3>
-    <p>Email: info@bobateashop.com</p>
-    <p>Phone: 123-456-7890</p>
+    <div class="menu-item">
+      <h2>Thai Tea</h2>
+      <p>A sweet and creamy Thai-inspired tea made with black tea, condensed milk, and spices.</p>
+      <p>Ingredients: Black tea, condensed milk, spices</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Taro Milk Tea</h2>
+      <p>A flavorful purple-hued tea made with taro root, milk, and tapioca pearls.</p>
+      <p>Ingredients: Taro root, milk, tapioca pearls, sugar</p>
+    </div>
+
+    <!-- Add more menu items as needed -->
+
   </section>
 
   <footer>
-    <p>&copy; 2024 Boba Tea Shop</p>
+    <h2>Locations</h2>
+    <p>1234 Boba Ave, Cityville, CA</p>
+    <p>5678 Tapioca St, Townsville, NY</p>
+    <p>Contact us: info@bobateashop.com</p>
   </footer>
-
-  <script>
-    // Add any JavaScript here if needed
-  </script>
 </body>
 </html>
